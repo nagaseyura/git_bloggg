@@ -1,0 +1,103 @@
+header{
+  height: 80px;
+  background-color: #87ceeb;
+  display: flex;
+  line-height: 80px;
+  color: #F9CB40
+  
+}
+
+.title{
+  color: black;
+  font-weight: bold;
+}
+
+
+a{
+  text-decoration: none;
+  color: #1B1B1B;
+}
+
+.post{
+  display: inline-block;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	color: #1B1B1B;
+	background: #87ceeb;
+	border-radius: 3px;
+}
+
+.post:hover{
+   background: #1B1B1B;
+         color: #fff;
+	 cursor: pointer;
+	 text-decoration: none;
+}
+
+.post1{
+  display: inline-block;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	color: #1B1B1B;
+	background-color: #87ceeb;
+	border-radius: 3px;
+	width: 60px;
+	border:1px solid black;
+}
+
+.post1:hover{
+   background: #1B1B1B;
+         color: #fff;
+	 cursor: pointer;
+	 text-decoration: none;
+}
+
+.login{
+  margin-left: 30px;
+}
+
+.contents{
+  height: calc(100vh - 130px);
+  background-color:  #b0e0e6;
+  padding: 40px 0;
+  text-align: center;
+  overflow: scroll;
+}
+
+.content1{
+  background: #eee;
+    border: 1.5px solid black;
+    padding: 20px;
+    display: block;
+    margin: 30px 150px 30px 150px;
+    border-radius: 7px;
+    background-color: #EEFFFF;
+}
+
+footer{
+  height: 50px;
+  background-color: #87ceeb;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

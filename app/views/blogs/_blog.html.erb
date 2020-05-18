@@ -1,0 +1,14 @@
+<div class="content1">
+  <h3><a href="/users/<%= blog.user_id %>">
+          <%= blog.user.nickname %>
+        </a></h3>
+      <%= simple_format(blog.text) %>
+      <span class="name">
+        
+        <%= link_to '詳細', "/blogs/#{blog.id}", class: "post1", method: :get %>
+        <% if user_signed_in? && current_user.id == blog.user.id %>
+         <%= link_to "編集", "/blogs/#{blog.id}/edit", class: "post1", method: :get %>
+          <%= link_to "削除", "/blogs/#{blog.id}", class: "post1", method: :delete %>
+      <% end %>
+      </span>
+    </div>

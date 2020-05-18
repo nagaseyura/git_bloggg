@@ -1,0 +1,14 @@
+<div class="contents">
+  <h3><%= @nickname %>の投稿一覧</h3>
+  <% @blogs.each do |blog| %>
+  <div class="content1">
+      <%= simple_format(blog.text) %>
+      <%= link_to '詳細', "/blogs/#{blog.id}", class: "post1",  method: :get %>
+        <% if user_signed_in? && current_user.id == blog.user.id %>
+         <%= link_to "編集", "/blogs/#{blog.id}/edit", class: "post1", method: :get %>
+          <%= link_to "削除", "/blogs/#{blog.id}",  class: "post1", method: :delete %>
+      <% end %>
+    </div>
+  <% end %>
+  <%= paginate (@blogs) %>
+</div>
